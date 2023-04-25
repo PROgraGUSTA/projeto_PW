@@ -1,37 +1,37 @@
 const product = [
     {
         id: 0,
-        image: 'main4.png',
+        image: 'img/main4.png',
         title: 'Tenis Tesla',
         price: 549,
     },
     {
         id: 1,
-        image: 'main5.png',
+        image: 'img/main5.png',
         title: 'Tenis Adidas Adi2000',
         price: 1000,
     },
     {
         id: 2,
-        image: 'main6.webp',
+        image: 'img/main6.webp',
         title: 'Tenis Louis Viutton - LV Trainer',
         price: 9149,
     },
     {
         id: 3,
-        image: 'main1.png',
+        image: 'img/main1.png',
         title: 'Tenis Nike Dunk Low Retro "UCLA"',
         price: 1199,
     },
     {
         id: 4,
-        image: 'main2.png',
+        image: 'img/main2.png',
         title: 'Tenis Nike Dunk Low Retro',
         price: 1049,
     },
     {
         id: 5,
-        image: 'main3.png',
+        image: 'img/main3.png',
         title: 'Tenis Nike Dunk Low Pro SB - Gulf',
         price: 1249,
     },
