@@ -1,0 +1,25 @@
+body{
+    background-color: #000000;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+}
+.header{
+    background-color: lightgrey;
+    width: 500px;
+    border: 15px solid #ff6500;
+    padding: 5px;
+    margin: auto;
+    align-items: center;
+}
+.col-md-6{
+    align-items: center;
+    margin: auto;
+}
+.col-md-4{
+    align-items: center;
+    margin: auto;
+}
