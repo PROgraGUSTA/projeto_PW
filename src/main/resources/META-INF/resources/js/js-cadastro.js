@@ -38,9 +38,9 @@ function inserirNaTabela(){
 
         celula = linha.insertCell();
         if (document.getElementById("opcaoNao").checked)
-            celula.innerText = "Não";
+            celula.innerText = "Funcionário";
         else
-            celula.innerText = "Sim";
+            celula.innerText = "Usuário";
 
         celula = linha.insertCell();
         celula.innerText = document.getElementById("telefoneUsuario").value;
@@ -55,7 +55,7 @@ function validarCampos() {
     // Verifica se os campos anteriores foram preenchidos
     if (document.getElementById('nomeUsuario').value !== "" && document.getElementById('emailUsiario').value !== "" && document.getElementById('telefoneUsuario').value !== "") {
         // Se os campos foram preenchidos, redireciona o usuário para a próxima página
-        window.location.href = 'http://localhost:8080/';
+        window.location.href = window.location.origin+"/bs-principal";
     } else {
         // Se algum dos campos não foi preenchido, exibe uma mensagem de erro
         alert('Por favor, preencha todos os campos para que possa acessar a página inicial do site');

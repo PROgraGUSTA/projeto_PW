@@ -1,4 +1,4 @@
-package br.edu.ifg.luziania;
+package br.edu.ifg.luziania.controller;
 
 import io.quarkus.qute.Template;
 import io.quarkus.qute.TemplateInstance;
@@ -18,7 +18,7 @@ public class Principal {
 
     @GET
     @Produces(MediaType.TEXT_HTML)
-    @Path("/")
+    @Path("/bs-pagprin")
     public TemplateInstance principal(){
         return principal.instance();
     }
