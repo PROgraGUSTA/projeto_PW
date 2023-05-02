@@ -18,7 +18,7 @@ public class Cadastro {
 
     @GET
     @Produces(MediaType.TEXT_HTML)
-    @Path("")
+    @Path("/")
     public TemplateInstance login(){
         return cadastro.instance();
     }

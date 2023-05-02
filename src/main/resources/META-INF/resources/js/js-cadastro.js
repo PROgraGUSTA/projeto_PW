@@ -44,10 +44,6 @@ function inserirNaTabela(){
 
         celula = linha.insertCell();
         celula.innerText = document.getElementById("telefoneUsuario").value;
-        //
-        // celula.append(criarBotaoRemover());
-        //
-        // limparFormulario();
     }
 }
 
@@ -55,7 +51,7 @@ function validarCampos() {
     // Verifica se os campos anteriores foram preenchidos
     if (document.getElementById('nomeUsuario').value !== "" && document.getElementById('emailUsiario').value !== "" && document.getElementById('telefoneUsuario').value !== "") {
         // Se os campos foram preenchidos, redireciona o usuário para a próxima página
-        window.location.href = window.location.origin+"/bs-principal";
+        window.location.href = window.location.origin+"/bs-pagprin";
     } else {
         // Se algum dos campos não foi preenchido, exibe uma mensagem de erro
         alert('Por favor, preencha todos os campos para que possa acessar a página inicial do site');

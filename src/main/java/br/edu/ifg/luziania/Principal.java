@@ -1,4 +1,4 @@
-package br.edu.ifg.luziania.controller;
+package br.edu.ifg.luziania;
 
 import io.quarkus.qute.Template;
 import io.quarkus.qute.TemplateInstance;
