@@ -1,14 +1,22 @@
 body {
-    background-color: #000000;
+    background-image: url("imagemdefundo.jpg");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
 }
 
 .login {
-    background-color: #ffffff;
+    font-family: Arial;
     width: 300px;
     padding: 25px;
-    margin: 100px auto;
-    border: 15px solid #ff6500;
-    box-shadow: 0px 0px 10px #888888;
+    margin: auto;
+}
+.pagl{
+    color: white;
+
 }
 
 h1 {
@@ -29,21 +37,38 @@ input[type="email"], input[type="password"] {
 }
 
 button{
-    background-color: #ff6500;
-    color: white;
+    background-color: #ffffff;
+    display: block;
+    margin: 0 auto;
+    color: #000000;
     border: none;
     padding: 10px;
-    margin-top: 10px;
-    border-radius: 3px;
+    border-radius: 10px;
     cursor: pointer;
 }
 
 button:hover {
-    background-color: rgba(255, 101, 0, 0.7);
+    background-color: rgba(32, 125, 164, 0.19);
 }
 
 p#mensagem {
     text-align: center;
-    color: red;
+    color: #ffffff;
     margin-top: 10px;
+}
+.col-md-4{
+    color: #ffffff;
+    align-items: center;
+    margin: auto;
+}
+.col-md-6{
+    color: #ffffff;
+    align-items: center;
+    margin: auto;
+}
+
+.funcaoo{
+    color: #ffffff;
+    text-align: right;
+    margin: auto;
 }

@@ -1,0 +1,12 @@
+body{
+    background-image:url("imagemdefundo.jpg");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+    font-family: Arial;
+    color: #ffffff;
+    height: 100vh;;
+}

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html  lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <title>Página de Login</title>
@@ -8,11 +8,34 @@
 </head>
 <body>
 <div class="login">
-    <h1>Página de Login</h1>
+    <div class="pagl">
+        <h1>Página de Login</h1>
+    </div>
     <form>
-        <input type="email" id="username" placeholder="Email">
-        <input type="password" id="password" placeholder="Senha">
-        <button type="button" onclick="validacaoLogin()">Entrar</button>
+        <div class="row">
+            <div class="col-md-6">
+                <label for="emailUsuario" >Email</label>
+                <input id="emailUsuario" class="form-control" type="email" placeholder="Digite seu E-mail">
+            </div>
+            <div class="col-md-4">
+                <label for="senhaUsuario" >Senha</label>
+                <input id="senhaUsuario" class="form-control" type="password" placeholder="Digite sua Senha">
+            </div>
+        </div>
+        <div class="col-md-4"><br>
+            <label>Qual sua função ?</label>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="opcao" id="opcaoSim">
+                <label class="form-check-label" for="opcaoSim">Usuário</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="opcao" id="opcaoNao">
+                <label class="form-check-label" for="opcaoNao">Funcionário</label>
+            </div>
+        </div>
+        <div class="d-grid col-md-6"><br>
+            <button type="button" onclick="validacaoLogin()">Entrar</button>
+        </div>
     </form>
     <p id="mensagem"></p>
 </div>
