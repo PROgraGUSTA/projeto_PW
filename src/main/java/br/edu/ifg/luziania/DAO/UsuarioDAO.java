@@ -4,9 +4,8 @@ import br.edu.ifg.luziania.entity.Usuario;
 
 import javax.enterprise.context.Dependent;
 import javax.inject.Inject;
-import javax.management.Query;
-import javax.swing.text.html.parser.Entity;
-import java.util.List;
+import javax.persistence.EntityManager;
+import javax.persistence.Query;
 
 @Dependent
 public class UsuarioDAO {
@@ -22,7 +21,15 @@ public class UsuarioDAO {
     public Usuario getById(Integer id){
         Query query = em.createQuery("from Usuario where id = :id");
         query.setParameter("id", id);
-        return (Usuario) query.getSingleStr
+        return (Usuario) query.getSingleResult();
+    }
+
+    public Usuario getByEmailAndSenha(String email, String senha){
+        Query query = em.createQuery("from Usuario where email = :email and senha = :senha");
+        query.setParameter("email", email);
+        query.setParameter("senha", senha);
+        return (Usuario) query.getSingleResult();
     }
 
 }
+
