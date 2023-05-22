@@ -27,6 +27,7 @@ public class Cadastro {
     @Produces(MediaType.APPLICATION_JSON)
     @Consumes(MediaType.APPLICATION_FORM_URLENCODED)
     @Path("/bs-cadastro")
+
     public Response CadastroDTO(@FormParam("nome") String nome, @FormParam("email") String email, @FormParam("senha") String senha){
         // Aqui você pode usar os dados recebidos para salvar o cadastro no banco de dados ou fazer outras operações
         System.out.println("Nome: " + nome);
