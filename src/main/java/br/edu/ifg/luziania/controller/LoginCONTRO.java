@@ -20,10 +20,10 @@ import javax.ws.rs.core.Response;
 //Em resumo, este código representa uma classe Java que lida com solicitações HTTP GET para a URL raiz e retorna uma instância de um objeto "Template".
 
 @Path("")
-public class Login {
+public class LoginCONTRO {
     private final Template login;
 
-    public Login(Template login){
+    public LoginCONTRO(Template login){
         this.login = login;
     }
 
